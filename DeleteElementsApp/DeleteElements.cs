@@ -79,6 +79,12 @@ namespace DeleteElements
                     doc.Delete(col.ToElementIds());
 
                 }
+                if (deleteElementsParams.columns)
+                {
+                    FilteredElementCollector col = new FilteredElementCollector(doc).OfClass(typeof(Column));
+                    doc.Delete(col.ToElementIds());
+
+                }
                 if (deleteElementsParams.floors)
                 {
                     FilteredElementCollector col = new FilteredElementCollector(doc).OfClass(typeof(Floor));

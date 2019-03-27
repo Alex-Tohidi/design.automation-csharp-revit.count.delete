@@ -32,6 +32,7 @@ namespace DeleteElements
         public bool floors { get; set; } = false;
         public bool doors { get; set; } = false;
         public bool windows { get; set; } = false;
+        public bool columns { get; set; } = false;
 
         static public DeleteElementsParams Parse(string jsonPath)
         {
